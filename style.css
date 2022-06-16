@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(1, 1, 24);
+    display: flex;
+    place-items: center;
+    min-height: 100vh;
+
+}
+main{
+    display: grid;
+    grid-template-areas: 
+    'a a b'
+    'c d d'
+    'c e e'
+;
+gap: 10px;
+width: 50%;
+margin: auto;
+}
+main div{
+    padding: 2em;
+    text-align: center;
+    border-radius: 1px;
+}
+.orange{
+    background-color: orangered;
+    grid-area: a;
+}
+.yellow{
+    background-color: orange;
+    grid-area: b;
+}
+.green{
+    background-color: green;
+    grid-area: c;
+}
+.skyblue1{
+    background-color: rgb(0, 195, 255);
+    grid-area: d;
+}
+.skyblue2{
+    background-color: rgb(0, 195, 255);
+    grid-area: e;
+}
